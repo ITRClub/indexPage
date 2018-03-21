@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>404 Not Found</title>
+</head>
+<body>
+  <h2>Warning: 404 Not Found (<span id="limit_time">5</span>)</h2>
+  <script>
+    var limit_value = document.getElementById('limit_time').innerText;
+    limit_value = parseInt(limit_value);
+    var defTimer = setInterval(function() {
+      limit_value = limit_value - 1;
+      document.getElementById('limit_time').innerHTML = limit_value;
+      if (limit_value == 0) {
+        console.log('start redirect');
+        history.go(-1);
+        window.clearInterval(defTimer);
+      }
+    }, 1000);
+  </script>
+</body>
+</html>

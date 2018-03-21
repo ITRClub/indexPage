@@ -1,0 +1,32 @@
+# ITRClub static website robots.txt
+
+User-agent:  Baiduspider
+Allow: /
+Disallow: /resource/
+
+User-Agent:  Googlebot
+Allow: /
+Disallow: /resource/
+
+User-agent:  Bingbot
+Allow: /
+Disallow: /resource/
+
+User-Agent:  360Spider
+Allow: /
+Disallow: /resource/
+
+User-Agent:  Yisouspider
+Allow: /
+Disallow: /resource/
+
+User-Agent:  Sogouspider
+Allow: /
+Disallow: /resource/
+
+User-Agent:  Yahoo!  Slurp
+Allow: /
+Disallow: /resource/
+
+User-Agent:  *
+Disallow:  /
